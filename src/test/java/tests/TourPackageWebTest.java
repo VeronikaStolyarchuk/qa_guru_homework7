@@ -63,7 +63,7 @@ public class TourPackageWebTest extends BaseTest {
     }
 
     @MethodSource
-    @ParameterizedTest
+    @ParameterizedTest(name = "При выборе страны {0} должен обновиться список популярных курортов {1}")
     void selectCountryShouldBeDisplayCorrectResorts(Country country, List<String> expectedResorts){
         tourSearchPage.openPage()
                 .setCountryName(country.getCountries())
