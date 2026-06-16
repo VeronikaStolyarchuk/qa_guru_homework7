@@ -11,7 +11,7 @@ public class BaseTest {
     @BeforeAll
     static void setupConfig(){
         Configuration.browser = "chrome";
-        Configuration.browserSize = "1920*1080";
+        Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://1001tur.ru";
         Configuration.timeout = 10000;
     }
